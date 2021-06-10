@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:id="@+id/tv_u_ref"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/U_ref"
+                android:textSize="18sp"
+                android:gravity="end"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+
+
+
+            <EditText
+                android:id="@+id/et_u_ref"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="32dp">
+
+            <TextView
+                android:id="@+id/tv_i_ref"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/I_ref"
+                android:textSize="18sp"
+                android:gravity="end"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content">
+
+            </Space>
+
+            <EditText
+                android:id="@+id/et_i_ref"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="wrap_content">
+
+    </Space>
+
+
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_ref_choice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/mode_V_or_I"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <Switch
+            android:id="@+id/switch_charging_mode"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textOff="@string/mode_I"
+            android:textOn="@string/mode_V"
+            android:scaleX="2"
+            android:scaleY="2"
+            />
+
+        <ToggleButton
+            android:id="@+id/tb_charging_OnOff"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:checked="false"
+            android:textOff="@string/start_charging"
+            android:textOn="@string/stop_charging"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
